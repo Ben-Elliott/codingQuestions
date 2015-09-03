@@ -1,0 +1,19 @@
+{
+  "name": "Questions",
+  "version": "1.0.0",
+  "description": "working on coding questions on improve skills",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ben-Elliott/codingQuestions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ben-Elliott/codingQuestions/issues"
+  },
+  "homepage": "https://github.com/Ben-Elliott/codingQuestions"
+}
