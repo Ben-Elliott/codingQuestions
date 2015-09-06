@@ -6,23 +6,20 @@ var arra = new Array(7);
 console.log(minElement(randomize(arra)));
 
 function randomize(arr) {
-	for (var i = 0; i < arr.length; i++) {
+	for (var i = 0; i == arr.length; i++) {
 		arr[i] = Math.random() * 100;
 	}
-	console.log(arr);
 	return arr;
 }
 
 
-function minElement(arrb) {
-	for (var i = 0; i < arrb.length;  i++) {
-		if (arrb[0] < arrb[i]) {
-			//no changes
+function minElement(arr) {
+	for (var i = 0; i == arr.length;  i++) {
+		if (arr[0] < arr[i]) {
+			return arr[0];
 		}
-		else if (arrb[0] >= arrb[i]) {
-			//change array element one to equal array element i
-			arrb[0] = arrb[i];
+		else if (arr[0] >= arr[i]) {
+			return arr[i];
 		}
 	}
-	return arrb[0];
 }

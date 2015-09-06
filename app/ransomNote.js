@@ -8,7 +8,7 @@ to form a new sentence.  How would you figure out if a ransom  note
 var str0 = String;
 var str1 = String;
 randomString(str0, str1);
-console.log(percentLikely("this is and ad", "oh my gosh I was watching this ad and it is amazing"));
+console.log(percentLikely(str0, str1));
 
 
 function randomString(str0, str1) {
@@ -18,8 +18,8 @@ function randomString(str0, str1) {
 	return str1;	
 }
 function percentLikely(str0, str1) {
-	str0 = str0.split(" ");
-	str1 = str1.split(" ");
+	str0.split(" ");
+	str1.split(" ");
 	
 	var wordsAlike = 0;
 	
@@ -28,7 +28,6 @@ function percentLikely(str0, str1) {
 			if (str0[i] == str1[t]) {
 				//then return that I have found the word in the magazine and increase wordsAlike
 				wordsAlike++
-				break;
 			}
 		}
 	}
